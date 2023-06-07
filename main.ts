@@ -26,8 +26,6 @@ basic.forever(function () {
             maqueen.motorStop(maqueen.Motors.All)
             maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, Velocidad_de_Giro)
             basic.pause(1900)
-            maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 40)
-            basic.pause(1000)
             maqueen.motorStop(maqueen.Motors.All)
         }
         if (obstaculo == 5) {
@@ -36,7 +34,7 @@ basic.forever(function () {
             basic.pause(1900)
             maqueen.motorStop(maqueen.Motors.All)
         }
-        if (obstaculo == 6) {
+        if (obstaculo < 7) {
             maqueen.motorStop(maqueen.Motors.All)
         }
     } else {
